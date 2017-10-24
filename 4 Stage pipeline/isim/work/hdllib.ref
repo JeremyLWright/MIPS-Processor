@@ -1,0 +1,17 @@
+MO XORGate NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/XOR2to1.v" vlg72/_x_o_r_gate.bin 1197043102
+MO One_Cycle_Delay NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/One_Cycle_Delay.v" vlg43/_one___cycle___delay.bin 1197043105
+MO EX_MEM_Reg NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/EX_MEM_Reg.v" vlg04/_e_x___m_e_m___reg.bin 1197043110
+MO Forwarding_Unit NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Forwarding_Unit.v" vlg2A/_forwarding___unit.bin 1197043109
+MO IF_ID_Reg NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/IF_ID_Reg.v" vlg34/_i_f___i_d___reg.bin 1197043108
+MO Adder NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Adder.v" vlg34/_adder.bin 1197043110
+MO ShiftLeft2 NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/ShiftLeft2.v" vlg7F/_shift_left2.bin 1197043104
+MO MIPSALU NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/MISALU.v" vlg53/_m_i_p_s_a_l_u.bin 1197043106
+MO ANDGate NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/ANDGate.v" vlg40/_a_n_d_gate.bin 1197043111
+MO InstructionMemory NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Instruction_Memory.v" vlg63/_instruction_memory.bin 1197043815
+MO SignExtension NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/SignExtender.v" vlg46/_sign_extension.bin 1197043104
+MO Mux32Bit2To1 NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Mux32Bit2to1.v" vlg78/_mux32_bit2_to1.bin 1197043106
+MO RegisterFile NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/RegisteFile.v" vlg69/_register_file.bin 1197043104
+MO glbl NULL C:/Xilinx92i/verilog/src/glbl.v vlg2D/glbl.bin 1197043111
+MO ID_EX_Reg NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/ID_EX_Reg.v" vlg5A/_i_d___e_x___reg.bin 1197043109
+MO Mulicycle_Pipeline NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Mulicycle_Pipeline.v" vlg54/_mulicycle___pipeline.bin 1197043111
+MO One_Cycle_Delay_5by5 NULL "C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/One_Cycle_Delay_5by5.v" vlg53/_one___cycle___delay__5by5.bin 1197043105

@@ -1,0 +1,21 @@
+K 10
+svn:ignore
+V 340
+_xmsgs
+isim
+isim.cmd
+forward_tb_isim_beh.wfs
+isim.hdlsourcefiles
+isim.tmp_save
+isimwavedata.xwv
+Mulicycle_Pipeline_beh.prj
+Mulicycle_Pipeline_isim_beh.exe
+mulicycle_pipeline_isim_beh.wfs
+Mulicycle_Pipeline_stx.prj
+Mulicycle_Pipeline_summary.html
+simulate_dofile.log_back
+xilinxsim.ini
+__ISE_repository_Pipeline.ise_.lock
+EX_MEM_Reg_stx.prj
+
+END

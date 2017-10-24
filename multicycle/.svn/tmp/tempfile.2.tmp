@@ -1,0 +1,138 @@
+ command line:
+   ./Mulicycle_Pipeline_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+<<<<<<< .mine
+     -ipcport  51306
+=======
+     -ipcport  49456
+>>>>>>> .r8
+
+<<<<<<< .mine
+Tue Nov 27 12:14:58 2007
+=======
+Sun Nov 25 13:06:09 2007
+>>>>>>> .r8
+
+WARNING:Simulator:12 - Port ReadData2_out of module EX_MEM_Reg in instance
+   /Mulicycle_Pipeline/EX_MEM_Stage/ is left unconnected.
+<<<<<<< .mine
+Total Line Count : 675
+=======
+Total Line Count : 654
+>>>>>>> .r8
+
+<<<<<<< .mine
+ Elaboration time : 0.0468 sec.
+=======
+ Elaboration time : 0.0312 sec.
+>>>>>>> .r8
+
+<<<<<<< .mine
+ Estimate current memory usage : 135.25 Meg. 
+=======
+ Estimate current memory usage : 130.81 Meg. 
+>>>>>>> .r8
+
+<<<<<<< .mine
+ Total Signals          : 145
+ Total Nets             : 816
+ Total Signal Drivers   : 50
+=======
+ Total Signals          : 143
+ Total Nets             : 833
+ Total Signal Drivers   : 51
+>>>>>>> .r8
+ Total Blocks           : 19
+ Total Primitive Blocks : 18
+ Total Processes        : 39
+ Total Traceable Variables  : 307
+<<<<<<< .mine
+ Total Scalar Nets and Variables : 10128
+=======
+ Total Scalar Nets and Variables : 10145
+>>>>>>> .r8
+ntrace select -o on -n /Mulicycle_Pipeline/Instruction 
+ntrace select -o on -n /Mulicycle_Pipeline/PC 
+ntrace select -o on -n /Mulicycle_Pipeline/Clk 
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_Stage3/A 
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_Stage3/B 
+<<<<<<< .mine
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_Stage3/ALUctl 
+=======
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_Result_Stage4 
+>>>>>>> .r8
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_Stage3/ALUOut 
+<<<<<<< .mine
+ntrace select -o on -n /Mulicycle_Pipeline/EX_MEM_Stage/ALU_Result_in 
+ntrace select -o on -n /Mulicycle_Pipeline/EX_MEM_Stage/ALU_Result_out 
+ntrace select -o on -n /Mulicycle_Pipeline/RegWrite 
+ntrace select -o on -n /Mulicycle_Pipeline/EX_MEM_Stage/RegDst_Mux_Result_in 
+ntrace select -o on -n /Mulicycle_Pipeline/EX_MEM_Stage/RegDst_Mux_Result_out 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/WriteRegister 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R01 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R07 
+ntrace select -o on -n /Mulicycle_Pipeline/Reg_Dst_Mux/a 
+ntrace select -o on -n /Mulicycle_Pipeline/Reg_Dst_Mux/b 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/Instruction16to20_in 
+=======
+>>>>>>> .r8
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/ReadData1_in 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/ReadData2_in 
+<<<<<<< .mine
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_SrcB_Mux/a 
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_SrcB_Mux/b 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/SignExtend_in 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/SignExtend_out 
+ntrace select -o on -n /Mulicycle_Pipeline/SignExtend/a 
+ntrace select -o on -n /Mulicycle_Pipeline/SignExtend/result 
+=======
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/ReadRegister1 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/ReadRegister2 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R01 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R02 
+>>>>>>> .r8
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R03 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R05 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R30 
+ntrace select -o on -n /Mulicycle_Pipeline/Forwarding_Unit/ForwardA 
+ntrace select -o on -n /Mulicycle_Pipeline/Forwarding_Unit/ForwardB 
+ntrace select -o on -n /Mulicycle_Pipeline/Forwarding_Unit/Rs 
+ntrace select -o on -n /Mulicycle_Pipeline/Forwarding_Unit/Rt 
+ntrace select -o on -n /Mulicycle_Pipeline/Forwarding_Unit/EX_MEM_RegisterRd 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+restart
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+restart
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isimrun 1800 ns 
+restart
+isimrun 1800 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+<<<<<<< .mine
+ Simulation time 0.1716 sec.
+=======
+ Simulation time 0.1404 sec.
+>>>>>>> .r8
+
+<<<<<<< .mine
+ Estimate current memory usage : 141.541 Meg. 
+=======
+ Estimate current memory usage : 137.101 Meg. 
+>>>>>>> .r8
+
+<<<<<<< .mine
+Tue Nov 27 12:20:07 2007
+=======
+Sun Nov 25 13:26:51 2007
+>>>>>>> .r8
+

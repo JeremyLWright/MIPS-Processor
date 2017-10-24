@@ -1,0 +1,17 @@
+C:/Xilinx92i/verilog/src/glbl.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/ANDGate.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/XOR2to1.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/EX_MEM_Reg.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Forwarding_Unit.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Mux32Bit2to1.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/MISALU.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Adder.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/ShiftLeft2.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/ID_EX_Reg.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/One_Cycle_Delay_5by5.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/One_Cycle_Delay.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/SignExtender.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/RegisteFile.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/IF_ID_Reg.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Instruction_Memory.v
+C:/Documents and Settings/Jeremy/Desktop/4 Stage pipeline/Mulicycle_Pipeline.v

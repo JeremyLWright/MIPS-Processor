@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 21
+/svn/MIPS/!svn/ver/8/
+END
+isim.log
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/MIPS/!svn/ver/13/isim.log
+END
+One_Cycle_Delay.v
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/MIPS/!svn/ver/6/One_Cycle_Delay.v
+END
+XOR3to1.v
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/MIPS/!svn/ver/1/XOR3to1.v
+END
+Pipeline.ise
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/MIPS/!svn/ver/13/Pipeline.ise
+END
+ORGate.v
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/MIPS/!svn/ver/1/ORGate.v
+END
+simulate_dofile.log
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/MIPS/!svn/ver/13/simulate_dofile.log
+END
+One_Cycle_Delay_5by5.v
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/MIPS/!svn/ver/13/One_Cycle_Delay_5by5.v
+END
+Pipeline.restore
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/MIPS/!svn/ver/13/Pipeline.restore
+END
+Mux32Bit2to1.v
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/MIPS/!svn/ver/1/Mux32Bit2to1.v
+END
+ID_EX_Reg.v
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/MIPS/!svn/ver/13/ID_EX_Reg.v
+END
+Mux32Bit1to1WriteData.v
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/MIPS/!svn/ver/1/Mux32Bit1to1WriteData.v
+END
+ANDGate_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/MIPS/!svn/ver/1/ANDGate_tb.v
+END
+SignExtendLH.v
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/MIPS/!svn/ver/1/SignExtendLH.v
+END
+newALUCTL.v
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/MIPS/!svn/ver/1/newALUCTL.v
+END
+ShiftLeft2_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/MIPS/!svn/ver/1/ShiftLeft2_tb.v
+END
+Instructions (2).xlsx
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/MIPS/!svn/ver/8/Instructions%20(2).xlsx
+END
+Mux5Bit2To1.v
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/MIPS/!svn/ver/4/Mux5Bit2To1.v
+END
+ANDGate.v
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/MIPS/!svn/ver/1/ANDGate.v
+END
+Adder_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/MIPS/!svn/ver/1/Adder_tb.v
+END
+ANDGate_tb.vhd
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/MIPS/!svn/ver/1/ANDGate_tb.vhd
+END
+Pipeline.ise_ISE_Backup
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/MIPS/!svn/ver/13/Pipeline.ise_ISE_Backup
+END
+JumpExtend_t.v
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/MIPS/!svn/ver/1/JumpExtend_t.v
+END
+EX_MEM_Reg.v
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/MIPS/!svn/ver/11/EX_MEM_Reg.v
+END
+mux_test.v
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/MIPS/!svn/ver/1/mux_test.v
+END
+Instruction_Memory.v
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/MIPS/!svn/ver/13/Instruction_Memory.v
+END
+Mulicycle_Pipeline.v
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/MIPS/!svn/ver/13/Mulicycle_Pipeline.v
+END
+Mux5Bit3To1WriteReg.v
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/MIPS/!svn/ver/1/Mux5Bit3To1WriteReg.v
+END
+XOR2to1.v
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/MIPS/!svn/ver/11/XOR2to1.v
+END
+Adder.v
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/MIPS/!svn/ver/1/Adder.v
+END
+Mux32Bit2To1Jump.v
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/MIPS/!svn/ver/1/Mux32Bit2To1Jump.v
+END
+ALUControl.v
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/MIPS/!svn/ver/1/ALUControl.v
+END
+ctl.v
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/svn/MIPS/!svn/ver/1/ctl.v
+END
+JumpExtend.v
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/MIPS/!svn/ver/1/JumpExtend.v
+END
+MainControl.v
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/MIPS/!svn/ver/1/MainControl.v
+END
+forward_TB.v
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/MIPS/!svn/ver/8/forward_TB.v
+END
+MISALU.v
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/MIPS/!svn/ver/11/MISALU.v
+END
+SignExtender.v
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/MIPS/!svn/ver/1/SignExtender.v
+END
+Adder_PC_add_8.v
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/MIPS/!svn/ver/1/Adder_PC_add_8.v
+END
+Data_Memory.v
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/MIPS/!svn/ver/1/Data_Memory.v
+END
+Forwarding_Unit.v
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/MIPS/!svn/ver/7/Forwarding_Unit.v
+END
+RegisteFile.v
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/MIPS/!svn/ver/13/RegisteFile.v
+END
+PC.v
+K 25
+svn:wc:ra_dav:version-url
+V 25
+/svn/MIPS/!svn/ver/2/PC.v
+END
+OR_T.v
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/MIPS/!svn/ver/1/OR_T.v
+END
+SignExtensionLH_t.v
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/MIPS/!svn/ver/1/SignExtensionLH_t.v
+END
+XOR2to1TB.v
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/MIPS/!svn/ver/2/XOR2to1TB.v
+END
+test_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/MIPS/!svn/ver/1/test_tb.v
+END
+Mux5Bit3To1.v
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/MIPS/!svn/ver/6/Mux5Bit3To1.v
+END
+Single_cycle_data_path.v
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/MIPS/!svn/ver/1/Single_cycle_data_path.v
+END
+ALU_tb.v
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/MIPS/!svn/ver/1/ALU_tb.v
+END
+IF_ID_Reg.v
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/MIPS/!svn/ver/11/IF_ID_Reg.v
+END
+Instructions (2).xls
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/MIPS/!svn/ver/10/Instructions%20(2).xls
+END
+ShiftLeft2.v
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/MIPS/!svn/ver/1/ShiftLeft2.v
+END

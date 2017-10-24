@@ -1,0 +1,19 @@
+MO Mux5Bit2To1 NULL C:/Users/Jeremy/Desktop/MIPS/Mux5Bit2To1.v vlg14/_mux5_bit2_to1.bin 1195846240
+MO XORGate NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/XOR2to1.v" vlg72/_x_o_r_gate.bin 1196288557
+MO One_Cycle_Delay NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/One_Cycle_Delay.v" vlg43/_one___cycle___delay.bin 1196288560
+MO EX_MEM_Reg NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/EX_MEM_Reg.v" vlg04/_e_x___m_e_m___reg.bin 1196288563
+MO Forwarding_Unit NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/Forwarding_Unit.v" vlg2A/_forwarding___unit.bin 1196288563
+MO IF_ID_Reg NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/IF_ID_Reg.v" vlg34/_i_f___i_d___reg.bin 1196288562
+MO Adder NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/Adder_PC_add_8.v" vlg34/_adder.bin 1196288564
+MO ShiftLeft2 NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/ShiftLeft2.v" vlg7F/_shift_left2.bin 1196288558
+MO MIPSALU NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/MISALU.v" vlg53/_m_i_p_s_a_l_u.bin 1196288560
+MO ANDGate NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/ANDGate.v" vlg40/_a_n_d_gate.bin 1196288564
+MO InstructionMemory NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/Instruction_Memory.v" vlg63/_instruction_memory.bin 1196438727
+MO Mux5Bit3To1 NULL C:/Users/Jeremy/Desktop/MIPS/Mux5Bit3To1.v vlg11/_mux5_bit3_to1.bin 1196106074
+MO SignExtension NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/SignExtender.v" vlg46/_sign_extension.bin 1196288558
+MO Mux32Bit2To1 NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/Mux32Bit2to1.v" vlg78/_mux32_bit2_to1.bin 1196288560
+MO RegisterFile NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/RegisteFile.v" vlg69/_register_file.bin 1196437384
+MO glbl NULL C:/Xilinx92i/verilog/src/glbl.v vlg2D/glbl.bin 1195840388
+MO ID_EX_Reg NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/ID_EX_Reg.v" vlg5A/_i_d___e_x___reg.bin 1196357744
+MO Mulicycle_Pipeline NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/Mulicycle_Pipeline.v" vlg54/_mulicycle___pipeline.bin 1196362650
+MO One_Cycle_Delay_5by5 NULL "C:/Kevin/School/ECE 369/project phase2/MIPS/One_Cycle_Delay_5by5.v" vlg53/_one___cycle___delay__5by5.bin 1196360804

@@ -1,0 +1,64 @@
+ command line:
+   ./Mulicycle_Pipeline_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  1083
+
+Fri Dec 07 09:10:18 2007
+
+WARNING:Simulator:12 - Port ReadData2_out of module EX_MEM_Reg in instance
+   /Mulicycle_Pipeline/EX_MEM_Stage/ is left unconnected.
+Total Line Count : 691
+
+ Elaboration time : 0.03125 sec.
+
+ Estimate current memory usage : 118.981 Meg. 
+
+ Total Signals          : 150
+ Total Nets             : 840
+ Total Signal Drivers   : 52
+ Total Blocks           : 20
+ Total Primitive Blocks : 19
+ Total Processes        : 41
+ Total Traceable Variables  : 307
+ Total Scalar Nets and Variables : 10152
+ntrace select -o on -n /Mulicycle_Pipeline/Instruction 
+ntrace select -o on -n /Mulicycle_Pipeline/PC 
+ntrace select -o on -n /Mulicycle_Pipeline/Branch_Adder_Result_Stage4 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/ReadData2_in 
+ntrace select -o on -n /Mulicycle_Pipeline/PCSrc 
+ntrace select -o on -n /Mulicycle_Pipeline/BNE_Control 
+ntrace select -o on -n /Mulicycle_Pipeline/IF_ID_Stage/FlushRegisters 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/FlushRegisters 
+ntrace select -o on -n /Mulicycle_Pipeline/IF_ID_Stage/Instruction_out 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/OpCode_in 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/OpCode_out 
+ntrace select -o on -n /Mulicycle_Pipeline/EX_MEM_Stage/OpCode_in 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/ReadData1_out 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/ReadData2_out 
+ntrace select -o on -n /Mulicycle_Pipeline/ID_EX_Stage/ALUOp 
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_Stage3/A 
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_Stage3/B 
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_Stage3/ALUOut 
+ntrace select -o on -n /Mulicycle_Pipeline/ForwardB 
+ntrace select -o on -n /Mulicycle_Pipeline/ALU_Stage3/Zero 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/RegWrite 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R20 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R19 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R21 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R17 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R23 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R18 
+ntrace select -o on -n /Mulicycle_Pipeline/Registers/R30 
+ntrace select -o on -n /Mulicycle_Pipeline/ALUSrc 
+ntrace start 
+isimrun 100000ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.078125 sec.
+
+ Estimate current memory usage : 125.272 Meg. 
+
+Fri Dec 07 09:52:47 2007
+

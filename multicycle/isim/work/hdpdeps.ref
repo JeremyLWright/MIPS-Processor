@@ -1,0 +1,68 @@
+V3 70
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Adder_PC_add_8.v" 2007/11/23.10:50:52 J.38
+MO work/Adder FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Adder_PC_add_8.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/ANDGate.v" 2007/11/23.10:50:52 J.38
+MO work/ANDGate FL "C:/Kevin/School/ECE 369/project phase2/MIPS/ANDGate.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/EX_MEM_Reg.v" 2007/11/27.14:23:52 J.38
+MO work/EX_MEM_Reg FL "C:/Kevin/School/ECE 369/project phase2/MIPS/EX_MEM_Reg.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Forwarding_Unit.v" 2007/11/27.12:20:22 J.38
+MO work/Forwarding_Unit \
+      FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Forwarding_Unit.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/ID_EX_Reg.v" 2007/11/29.10:35:36 J.38
+MO work/ID_EX_Reg FL "C:/Kevin/School/ECE 369/project phase2/MIPS/ID_EX_Reg.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/IF_ID_Reg.v" 2007/11/27.14:05:24 J.38
+MO work/IF_ID_Reg FL "C:/Kevin/School/ECE 369/project phase2/MIPS/IF_ID_Reg.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Instruction_Memory.v" 2007/11/30.08:50:16 J.38
+MO work/InstructionMemory \
+      FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Instruction_Memory.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/MISALU.v" 2007/11/27.14:15:06 J.38
+MO work/MIPSALU FL "C:/Kevin/School/ECE 369/project phase2/MIPS/MISALU.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Mulicycle_Pipeline.v" 2007/11/29.11:57:07 J.38
+MO work/Mulicycle_Pipeline \
+      FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Mulicycle_Pipeline.v" \
+      MI ANDGate MI Adder MI EX_MEM_Reg MI Forwarding_Unit MI ID_EX_Reg MI IF_ID_Reg \
+      MI InstructionMemory MI MIPSALU MI Mux32Bit2To1 MI One_Cycle_Delay \
+      MI One_Cycle_Delay_5by5 MI RegisterFile MI ShiftLeft2 MI SignExtension \
+      MI XORGate
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Mux32Bit2to1.v" 2007/11/23.10:50:52 J.38
+MO work/Mux32Bit2To1 \
+      FL "C:/Kevin/School/ECE 369/project phase2/MIPS/Mux32Bit2to1.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/One_Cycle_Delay.v" 2007/11/26.09:49:38 J.38
+MO work/One_Cycle_Delay \
+      FL "C:/Kevin/School/ECE 369/project phase2/MIPS/One_Cycle_Delay.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/One_Cycle_Delay_5by5.v" 2007/11/29.11:26:36 J.38
+MO work/One_Cycle_Delay_5by5 \
+      FL "C:/Kevin/School/ECE 369/project phase2/MIPS/One_Cycle_Delay_5by5.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/RegisteFile.v" 2007/11/30.08:42:50 J.38
+MO work/RegisterFile \
+      FL "C:/Kevin/School/ECE 369/project phase2/MIPS/RegisteFile.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/ShiftLeft2.v" 2007/11/23.10:50:52 J.38
+MO work/ShiftLeft2 FL "C:/Kevin/School/ECE 369/project phase2/MIPS/ShiftLeft2.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/SignExtender.v" 2007/11/23.10:50:52 J.38
+MO work/SignExtension \
+      FL "C:/Kevin/School/ECE 369/project phase2/MIPS/SignExtender.v"
+FL "C:/Kevin/School/ECE 369/project phase2/MIPS/XOR2to1.v" 2007/11/27.13:01:50 J.38
+MO work/XORGate FL "C:/Kevin/School/ECE 369/project phase2/MIPS/XOR2to1.v"
+FL C:/Users/Jeremy/Desktop/MIPS/Adder.v 2007/11/23.10:50:51 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/Adder_PC_add_8.v 2007/11/23.10:50:51 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/ANDGate.v 2007/11/23.10:50:51 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/EX_MEM_Reg.v 2007/11/27.14:23:50 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/Forwarding_Unit.v 2007/11/27.12:20:21 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/ID_EX_Reg.v 2007/11/27.14:04:44 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/IF_ID_Reg.v 2007/11/27.14:05:23 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/Instruction_Memory.v 2007/11/28.15:14:35 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/MISALU.v 2007/11/27.14:15:04 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/Mulicycle_Pipeline.v 2007/11/28.13:35:21 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/Mux32Bit2to1.v 2007/11/23.10:50:51 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/Mux5Bit2To1.v 2007/11/23.12:30:04 J.38
+MO work/Mux5Bit2To1 FL C:/Users/Jeremy/Desktop/MIPS/Mux5Bit2To1.v
+FL C:/Users/Jeremy/Desktop/MIPS/Mux5Bit3To1.v 2007/11/26.09:49:36 J.38
+MO work/Mux5Bit3To1 FL C:/Users/Jeremy/Desktop/MIPS/Mux5Bit3To1.v
+FL C:/Users/Jeremy/Desktop/MIPS/One_Cycle_Delay.v 2007/11/26.09:49:36 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/One_Cycle_Delay_5by5.v 2007/11/28.13:35:08 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/RegisteFile.v 2007/11/28.14:08:07 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/ShiftLeft2.v 2007/11/23.10:50:51 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/SignExtender.v 2007/11/23.10:50:51 J.38
+FL C:/Users/Jeremy/Desktop/MIPS/XOR2to1.v 2007/11/27.13:01:48 J.38
+FL $XILINX/verilog/src/glbl.v 2007/05/18.14:22:56 J.38
+MO work/glbl FL $XILINX/verilog/src/glbl.v

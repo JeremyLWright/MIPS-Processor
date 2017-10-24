@@ -1,0 +1,17 @@
+C:/Xilinx92i/verilog/src/glbl.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/ANDGate.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/XOR2to1.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/EX_MEM_Reg.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/Forwarding_Unit.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/Mux32Bit2to1.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/MISALU.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/Adder_PC_add_8.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/ShiftLeft2.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/ID_EX_Reg.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/One_Cycle_Delay_5by5.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/One_Cycle_Delay.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/SignExtender.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/RegisteFile.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/IF_ID_Reg.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/Instruction_Memory.v
+C:/Kevin/School/ECE 369/project phase2/MIPS/Mulicycle_Pipeline.v

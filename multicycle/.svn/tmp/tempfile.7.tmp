@@ -1,0 +1,212 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    13:51:46 11/21/2007 
+// Design Name: 
+// Module Name:    Mulicycle_Pipeline 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module Mulicycle_Pipeline(Instruction, PC, PCSrc);
+
+	wire [31:0] PC4_or_Branch_Result;
+	wire [31:0] Program_Counter_Out;
+	output reg PCSrc;
+	output reg [31:0] Instruction;
+	output reg [31:0] PC;
+	reg Clk;
+	
+	//Stage 2
+	wire [31:0] PC_out;
+	wire [31:0] Instruction_out;
+	wire [4:0] 	Instruction20to16_Delayed;
+	wire [4:0]  Instruction25to21_Delayed;
+	wire [31:0] ReadData1;
+	wire [31:0] ReadData2;
+	wire [31:0] SignExtended;
+	wire [5:0]	Stage3_to_Stage4_OpCode;
+	
+	//Stage 3
+	wire [4:0] Instruction_25to21_Stage3;
+	wire [4:0] Instruction_20to16_Stage3;
+	wire [4:0] Instruction_Mux_Result_Stage3;
+	wire [31:0] SignExtended_Stage3;
+	wire [31:0] ReadData2_Stage3;
+	wire [31:0]	ReadData1_Stage3;
+	wire [31:0] ALU_Src_B;
+	wire [31:0] ALU_Src_A;
+	wire [31:0] ALU_Result;
+	wire ALU_Zero;
+	wire [31:0] Shift_2_Result;
+	wire [31:0] Branch_Adder_A;
+	wire [31:0] Branch_Adder_Result;
+	wire RegDst;
+	wire [1:0] ALUOp;
+<<<<<<< .mine
+	wire ALUSrc;
+	
+	//Forwarding Stuff
+	wire [1:0] ForwardA;
+	wire [1:0] ForwardB;
+=======
+	wire ALUSrc;
+>>>>>>> .r8
+	
+	//Forwarding Stuff
+	wire ForwardA;
+	wire ForwardB;
+	wire [31:0] Forward_A_Mux_result;
+	wire [31:0] Forward_B_Mux_result;	
+	
+	//stage 4
+	wire [31:0] Branch_Adder_Result_Stage4;
+	wire ALU_Zero_Stage4;
+	wire [31:0] ALU_Result_Stage4;
+	wire [31:0] ReadData2_Stage4;
+	wire Branch_XOR_to_AND;
+	wire BNE_Control;
+	wire Branch_Control;
+	wire Remainder_Control;
+	wire RegWrite;
+	wire [4:0] Instruction_20to16_Stage4;
+	
+	initial
+	begin
+		Clk <= 0;
+		PC <= -4;
+		PCSrc <= 0;
+	end
+	
+	always
+	begin
+		#50;
+		Clk <= 1;
+		#50;
+		Clk <= 0;
+	end
+	
+	//PC is written on the negedge.
+	always @ (negedge Clk) //PC Adder, PC Mux and PC Unit...
+	begin
+		if(PCSrc == 0) //Take the normal program instructions
+			PC <= PC + 4;
+		else //PcSrc ==1 choose the Branch Target
+			PC <= Branch_Adder_Result_Stage4;		//Result from the calcualtion in stage 4
+	end
+	
+	InstructionMemory InstMem(.Address(PC), .Clk(Clk), .Instruction(Instruction));
+	
+	IF_ID_Reg IF_ID_Stage(	.PC_Plus_4_in(PC), 
+									.Instruction_in(Instruction), 
+									.Instruction_out(Instruction_out), 
+									.Clk(Clk), 
+									.PC_Plus_4_out(PC_out));
+	
+	//Stage 2
+	
+	RegisterFile Registers(	.ReadRegister1(Instruction_out[25:21]), 
+									.ReadRegister2(Instruction_out[20:16]), 
+									.WriteRegister(Instruction_20to16_Stage4), 
+									.WriteData(ALU_Result_Stage4), 
+									.RegWrite(RegWrite), 
+									.Clk(Clk), 
+									.ReadData1(ReadData1), 
+									.ReadData2(ReadData2), 
+									.WriteRemainder(Remainder_Control));
+									
+	SignExtension SignExtend(.a(Instruction_out[15:0]), .result(SignExtended));
+	
+	One_Cycle_Delay Instruction20to16Delay(.a(Instruction[20:16]), .a_delayed(Instruction20to16_Delayed), .clk(Clk));
+	
+	One_Cycle_Delay Instruction25to21Delay(.a(Instruction[25:21]), .a_delayed(Instruction25to21_Delayed), .clk(Clk));
+	
+	ID_EX_Reg ID_EX_Stage(	.PC_plus_4_in(PC_out), 
+									.ReadData1_in(ReadData1), 
+									.ReadData2_in(ReadData2), 
+									.ReadData1_out(ReadData1_Stage3),
+									.ReadData2_out(ReadData2_Stage3), 
+									.SignExtend_in(SignExtended), 
+									.SignExtend_out(SignExtended_Stage3), 
+									.PC_Plus_4_out(Branch_Adder_A), 
+									.Instruction16to20_in(Instruction20to16_Delayed), 
+									.Instruction16to20_out(Instruction_20to16_Stage3), 
+									.Instruction25to21_in(Instruction25to21_Delayed), 
+									.Instruction25to21_out(Instruction_25to21_Stage3), 
+									.Clk(Clk),
+									.OpCode_in(Instruction[31:26]), 
+									.OpCode_out(Stage3_to_Stage4_OpCode),
+									.ALUOp(ALUOp), 
+									.RegDst(RegDst), 
+									.ALUSrc(ALUSrc),
+									.FlushRegisters(PCSrc));
+	//Stage 3
+
+	ShiftLeft2 Shifter(.a(SignExtended_Stage3), .result(Shift_2_Result));
+	
+	Adder Branch_Adder(.A(Branch_Adder_A), .B(Shift_2_Result), .result(Branch_Adder_Result));
+	
+	MIPSALU ALU_Stage3(	.A(Forward_A_Mux_result), 
+								.B(ALU_Src_B), 
+								.ALUctl(ALUOp), 
+								.ALUOut(ALU_Result),
+								.Zero(ALU_Zero));
+	
+<<<<<<< .mine
+	Mux5Bit3To1 Forward_A_Mux(.a(), .b(), .c(), .op(), .result());
+	
+	Mux5Bit3To1 Forward_B_Mux(.a(), .b(), .c(), .op(), .result());
+	
+	Mux32Bit2To1 ALU_SrcB_Mux(	.a(ReadData2_Stage3), 
+=======
+	Mux32Bit2To1 Forward_A_Mux(ReadData1_Stage3, ALU_Result_Stage4, ForwardA, Forward_A_Mux_result);
+	
+	Mux32Bit2To1 Forward_B_Mux(ReadData2_Stage3, ALU_Result_Stage4, ForwardB, Forward_B_Mux_result);
+	
+	Mux32Bit2To1 ALU_SrcB_Mux(	.a(Forward_B_Mux_result), 
+>>>>>>> .r8
+										.b(SignExtended_Stage3), 
+										.op(ALUSrc), 
+										.result(ALU_Src_B));
+										
+	//Mux5Bit2To1 Reg_Dst_Mux(	.a(Instruction_20to16_Stage3), 
+	//									.b(Instruction_25to21_Stage3), 
+	//									.op(RegDst), 
+	//									.result(Instruction_Mux_Result_Stage3));
+	
+  Forwarding_Unit(ForwardA, ForwardB, Instruction_25to21_Stage3, Instruction_20to16_Stage3, Instruction_20to16_Stage4);
+	
+	EX_MEM_Reg EX_MEM_Stage(	.BranchTarget_in(Branch_Adder_Result), 
+										.BranchTarget_out(Branch_Adder_Result_Stage4), //Circle it back to the PC Selecter Mux
+										.Zero_in(ALU_Zero), 
+										.Zero_out(ALU_Zero_Stage4), 
+										.ALU_Result_in(ALU_Result), 
+										.ALU_Result_out(ALU_Result_Stage4), //Circle it back to the registers now
+										.ReadData2_in(ReadData2_Stage3), 
+										.ReadData2_out(), 
+										.RegDst_Mux_Result_in(Instruction_20to16_Stage3), 
+										.RegDst_Mux_Result_out(Instruction_20to16_Stage4), 
+										.Clk(Clk),
+										.OpCode_in(Stage3_to_Stage4_OpCode), 
+										.RegWrite(RegWrite), 
+										.WriteRemainder(Remainder_Control), 
+										.Branch(Branch_Control), 
+										.Bne(BNE_Control),
+										.FlushRegisters(PCSrc));
+	//Stage 4
+	
+	XORGate XOR_Branch(BNE_Control, ALU_Zero_Stage4, Branch_XOR_to_AND);
+	ANDGate ANDGate(Branch_Control, Branch_XOR_to_AND, PCSrc);
+	
+	
+endmodule

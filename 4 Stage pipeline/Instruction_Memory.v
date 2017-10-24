@@ -1,0 +1,414 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    14:54:58 10/07/2007 
+// Design Name: 
+// Module Name:    InstructionMemory 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module InstructionMemory(Address, Clk, Instruction);
+
+input [31:0] Address; // 32-bit address to memory.
+input Clk;
+
+output [31:0] Instruction; // Value read from memory location Address
+
+reg [31:0] Instruction;                    // Initialize output register whcik is instruction. 
+
+//instruction registers
+reg [31:0] 
+i000, 	i001, 	i002, 
+i003, 	i004, 	i005, 
+i006, 	i007, 	i008, 
+i009, 	i010, 	i011, 
+i012, 	i013, 	i014, 
+i015, 	i016, 	i017, 
+i018, 	i019, 	i020, 
+i021, 	i022, 	i023, 
+i024, 	i025, 	i026, 
+i027, 	i028, 	i029, 
+i030, 	i031, 	i032, 
+i033, 	i034, 	i035, 
+i036, 	i037, 	i038, 
+i039, 	i040, 	i041, 
+i042, 	i043, 	i044, 
+i045, 	i046, 	i047, 
+i048, 	i049, 	i050, 
+i051, 	i052, 	i053, 
+i054, 	i055, 	i056, 
+i057, 	i058, 	i059, 
+i060, 	i061, 	i062, 
+i063, 	i064, 	i065, 
+i066, 	i067, 	i068, 
+i069, 	i070, 	i071, 
+i072, 	i073, 	i074, 
+i075, 	i076, 	i077, 
+i078, 	i079, 	i080, 
+i081, 	i082, 	i083, 
+i084, 	i085, 	i086, 
+i087, 	i088, 	i089, 
+i090, 	i091, 	i092, 
+i093, 	i094, 	i095, 
+i096, 	i097, 	i098, 
+i099, 	i100, 	i101, 
+i102, 	i103, 	i104, 
+i105, 	i106, 	i107, 
+i108, 	i109, 	i110, 
+i111, 	i112, 	i113, 
+i114, 	i115, 	i116, 
+i117, 	i118, 	i119, 
+i120, 	i121, 	i122, 
+i123, 	i124, 	i125, 
+i126, 	i127, 	i128, 
+i129, 	i130, 	i131, 
+i132, 	i133, 	i134, 
+i135, 	i136, 	i137, 
+i138, 	i139, 	i140, 
+i141, 	i142, 	i143, 
+i144, 	i145, 	i146, 
+i147, 	i148, 	i149, 
+i150, 	i151, 	i152, 
+i153, 	i154, 	i155, 
+i156, 	i157, 	i158, 
+i159, 	i160, 	i161, 
+i162, 	i163, 	i164, 
+i165, 	i166, 	i167, 
+i168, 	i169, 	i170, 
+i171, 	i172, 	i173, 
+i174, 	i175, 	i176, 
+i177, 	i178, 	i179, 
+i180, 	i181, 	i182, 
+i183, 	i184, 	i185, 
+i186, 	i187, 	i188, 
+i189, 	i190, 	i191, 
+i192, 	i193, 	i194, 
+i195, 	i196, 	i197, 
+i198, 	i199, 	i200, 
+i201, 	i202, 	i203, 
+i204, 	i205, 	i206, 
+i207, 	i208, 	i209, 
+i210, 	i211, 	i212, 
+i213, 	i214, 	i215, 
+i216, 	i217, 	i218, 
+i219, 	i220, 	i221, 
+i222, 	i223, 	i224, 
+i225, 	i226, 	i227, 
+i228, 	i229, 	i230, 
+i231, 	i232, 	i233, 
+i234, 	i235, 	i236, 
+i237, 	i238, 	i239, 
+i240, 	i241, 	i242, 
+i243, 	i244, 	i245, 
+i246, 	i247, 	i248, 
+i249, 	i250, 	i251, 
+i252, 	i253, 	i254, 
+i255; 
+		
+
+
+initial
+	begin
+	
+	
+
+i000 <= 32'b00100000000100110000000000000001; //addi $19, $0, 0			
+i001 <= 32'b00100000000100010000000000000110; //addi $17, $0, 2   25    100			
+i002 <= 32'b00100000000100100000000000000001; //addi $18, $0, 1			
+i003 <= 32'b00100000000101110000000000000001; //addi $23, $0, 1			
+i004 <= 32'b00100000000101000000000000000010; //addi $20, $0, 2			
+i005 <= 32'b00010010011100010000000000001110; //beq $19, $17, 53 [End-0x00400034??]; 19: beq $s3, $s1, End			
+i006 <= 32'b00100010010100100000000000000010; //addi $18, $18, 2			
+i007 <= 32'b00100000000000000000000000000000; //Trashy filler instruction		
+i008 <= 32'b00100010100101010000000000000000; //addi $21, $20, 0			
+i009 <= 32'b00000010010101010000000000011010; //div $18, $21			
+i010 <= 32'b00100000000000000000000000000000; //Trashy filler instruction		
+i011 <= 32'b00100000000000000000000000000000; //Trashy filler instruction		
+i012 <= 32'b00010011110000001111111111111001; //beq $30, $0, -28 [StartPrimeFinding-0x00400050]; 28: beq $30, $0, StartPrimeFinding			
+i013 <= 32'b00100010101101011111111111111111; //addi $21, $21, -1			
+i014 <= 32'b00010110101101111111111111111011; //bne $21, $23, -20 [StartCrazyDivision-0x00400058]; 30: bne $s5, $s7, StartCrazyDivision			
+i015 <= 32'b00100000000000000000000000000000; //Trashy filler instruction		
+i016 <= 32'b00100010011100110000000000000001; //addi $19, $19, 1			
+i017 <= 32'b00100010010101000000000000000000; //addi $20, $18, 0			
+i018 <= 32'b00010100000101111111111111110101; //bne $0, $23, -49 [StartPrimeFinding-0x00400064??]; 41: bne $0, $s7, StartPrimeFinding			
+i019 <= 32'b00100000000000000000000000000000; //addi $0, $0, 0			
+
+	end
+	
+//always @ (posedge Clk) //The posedge was used for HW when each functional unit was test individualy
+always @ (Address)		//Address is used now since the PC is connected to it. 
+        begin
+
+                case(Address)
+31'd0: Instruction = i000;
+31'd4: Instruction = i001;
+31'd8: Instruction = i002;
+31'd12: Instruction = i003;
+31'd16: Instruction = i004;
+31'd20: Instruction = i005;
+31'd24: Instruction = i006;
+31'd28: Instruction = i007;
+31'd32: Instruction = i008;
+31'd36: Instruction = i009;
+31'd40: Instruction = i010;
+31'd44: Instruction = i011;
+31'd48: Instruction = i012;
+31'd52: Instruction = i013;
+31'd56: Instruction = i014;
+31'd60: Instruction = i015;
+31'd64: Instruction = i016;
+31'd68: Instruction = i017;
+31'd72: Instruction = i018;
+31'd76: Instruction = i019;
+31'd80: Instruction = i020;
+31'd84: Instruction = i021;
+31'd88: Instruction = i022;
+31'd92: Instruction = i023;
+31'd96: Instruction = i024;
+31'd100: Instruction = i025;
+31'd104: Instruction = i026;
+31'd108: Instruction = i027;
+31'd112: Instruction = i028;
+31'd116: Instruction = i029;
+31'd120: Instruction = i030;
+31'd124: Instruction = i031;
+31'd128: Instruction = i032;
+31'd132: Instruction = i033;
+31'd136: Instruction = i034;
+31'd140: Instruction = i035;
+31'd144: Instruction = i036;
+31'd148: Instruction = i037;
+31'd152: Instruction = i038;
+31'd156: Instruction = i039;
+31'd160: Instruction = i040;
+31'd164: Instruction = i041;
+31'd168: Instruction = i042;
+31'd172: Instruction = i043;
+31'd176: Instruction = i044;
+31'd180: Instruction = i045;
+31'd184: Instruction = i046;
+31'd188: Instruction = i047;
+31'd192: Instruction = i048;
+31'd196: Instruction = i049;
+31'd200: Instruction = i050;
+31'd204: Instruction = i051;
+31'd208: Instruction = i052;
+31'd212: Instruction = i053;
+31'd216: Instruction = i054;
+31'd220: Instruction = i055;
+31'd224: Instruction = i056;
+31'd228: Instruction = i057;
+31'd232: Instruction = i058;
+31'd236: Instruction = i059;
+31'd240: Instruction = i060;
+31'd244: Instruction = i061;
+31'd248: Instruction = i062;
+31'd252: Instruction = i063;
+31'd256: Instruction = i064;
+31'd260: Instruction = i065;
+31'd264: Instruction = i066;
+31'd268: Instruction = i067;
+31'd272: Instruction = i068;
+31'd276: Instruction = i069;
+31'd280: Instruction = i070;
+31'd284: Instruction = i071;
+31'd288: Instruction = i072;
+31'd292: Instruction = i073;
+31'd296: Instruction = i074;
+31'd300: Instruction = i075;
+31'd304: Instruction = i076;
+31'd308: Instruction = i077;
+31'd312: Instruction = i078;
+31'd316: Instruction = i079;
+31'd320: Instruction = i080;
+31'd324: Instruction = i081;
+31'd328: Instruction = i082;
+31'd332: Instruction = i083;
+31'd336: Instruction = i084;
+31'd340: Instruction = i085;
+31'd344: Instruction = i086;
+31'd348: Instruction = i087;
+31'd352: Instruction = i088;
+31'd356: Instruction = i089;
+31'd360: Instruction = i090;
+31'd364: Instruction = i091;
+31'd368: Instruction = i092;
+31'd372: Instruction = i093;
+31'd376: Instruction = i094;
+31'd380: Instruction = i095;
+31'd384: Instruction = i096;
+31'd388: Instruction = i097;
+31'd392: Instruction = i098;
+31'd396: Instruction = i099;
+31'd400: Instruction = i100;
+31'd404: Instruction = i101;
+31'd408: Instruction = i102;
+31'd412: Instruction = i103;
+31'd416: Instruction = i104;
+31'd420: Instruction = i105;
+31'd424: Instruction = i106;
+31'd428: Instruction = i107;
+31'd432: Instruction = i108;
+31'd436: Instruction = i109;
+31'd440: Instruction = i110;
+31'd444: Instruction = i111;
+31'd448: Instruction = i112;
+31'd452: Instruction = i113;
+31'd456: Instruction = i114;
+31'd460: Instruction = i115;
+31'd464: Instruction = i116;
+31'd468: Instruction = i117;
+31'd472: Instruction = i118;
+31'd476: Instruction = i119;
+31'd480: Instruction = i120;
+31'd484: Instruction = i121;
+31'd488: Instruction = i122;
+31'd492: Instruction = i123;
+31'd496: Instruction = i124;
+31'd500: Instruction = i125;
+31'd504: Instruction = i126;
+31'd508: Instruction = i127;
+31'd512: Instruction = i128;
+31'd516: Instruction = i129;
+31'd520: Instruction = i130;
+31'd524: Instruction = i131;
+31'd528: Instruction = i132;
+31'd532: Instruction = i133;
+31'd536: Instruction = i134;
+31'd540: Instruction = i135;
+31'd544: Instruction = i136;
+31'd548: Instruction = i137;
+31'd552: Instruction = i138;
+31'd556: Instruction = i139;
+31'd560: Instruction = i140;
+31'd564: Instruction = i141;
+31'd568: Instruction = i142;
+31'd572: Instruction = i143;
+31'd576: Instruction = i144;
+31'd580: Instruction = i145;
+31'd584: Instruction = i146;
+31'd588: Instruction = i147;
+31'd592: Instruction = i148;
+31'd596: Instruction = i149;
+31'd600: Instruction = i150;
+31'd604: Instruction = i151;
+31'd608: Instruction = i152;
+31'd612: Instruction = i153;
+31'd616: Instruction = i154;
+31'd620: Instruction = i155;
+31'd624: Instruction = i156;
+31'd628: Instruction = i157;
+31'd632: Instruction = i158;
+31'd636: Instruction = i159;
+31'd640: Instruction = i160;
+31'd644: Instruction = i161;
+31'd648: Instruction = i162;
+31'd652: Instruction = i163;
+31'd656: Instruction = i164;
+31'd660: Instruction = i165;
+31'd664: Instruction = i166;
+31'd668: Instruction = i167;
+31'd672: Instruction = i168;
+31'd676: Instruction = i169;
+31'd680: Instruction = i170;
+31'd684: Instruction = i171;
+31'd688: Instruction = i172;
+31'd692: Instruction = i173;
+31'd696: Instruction = i174;
+31'd700: Instruction = i175;
+31'd704: Instruction = i176;
+31'd708: Instruction = i177;
+31'd712: Instruction = i178;
+31'd716: Instruction = i179;
+31'd720: Instruction = i180;
+31'd724: Instruction = i181;
+31'd728: Instruction = i182;
+31'd732: Instruction = i183;
+31'd736: Instruction = i184;
+31'd740: Instruction = i185;
+31'd744: Instruction = i186;
+31'd748: Instruction = i187;
+31'd752: Instruction = i188;
+31'd756: Instruction = i189;
+31'd760: Instruction = i190;
+31'd764: Instruction = i191;
+31'd768: Instruction = i192;
+31'd772: Instruction = i193;
+31'd776: Instruction = i194;
+31'd780: Instruction = i195;
+31'd784: Instruction = i196;
+31'd788: Instruction = i197;
+31'd792: Instruction = i198;
+31'd796: Instruction = i199;
+31'd800: Instruction = i200;
+31'd804: Instruction = i201;
+31'd808: Instruction = i202;
+31'd812: Instruction = i203;
+31'd816: Instruction = i204;
+31'd820: Instruction = i205;
+31'd824: Instruction = i206;
+31'd828: Instruction = i207;
+31'd832: Instruction = i208;
+31'd836: Instruction = i209;
+31'd840: Instruction = i210;
+31'd844: Instruction = i211;
+31'd848: Instruction = i212;
+31'd852: Instruction = i213;
+31'd856: Instruction = i214;
+31'd860: Instruction = i215;
+31'd864: Instruction = i216;
+31'd868: Instruction = i217;
+31'd872: Instruction = i218;
+31'd876: Instruction = i219;
+31'd880: Instruction = i220;
+31'd884: Instruction = i221;
+31'd888: Instruction = i222;
+31'd892: Instruction = i223;
+31'd896: Instruction = i224;
+31'd900: Instruction = i225;
+31'd904: Instruction = i226;
+31'd908: Instruction = i227;
+31'd912: Instruction = i228;
+31'd916: Instruction = i229;
+31'd920: Instruction = i230;
+31'd924: Instruction = i231;
+31'd928: Instruction = i232;
+31'd932: Instruction = i233;
+31'd936: Instruction = i234;
+31'd940: Instruction = i235;
+31'd944: Instruction = i236;
+31'd948: Instruction = i237;
+31'd952: Instruction = i238;
+31'd956: Instruction = i239;
+31'd960: Instruction = i240;
+31'd964: Instruction = i241;
+31'd968: Instruction = i242;
+31'd972: Instruction = i243;
+31'd976: Instruction = i244;
+31'd980: Instruction = i245;
+31'd984: Instruction = i246;
+31'd988: Instruction = i247;
+31'd992: Instruction = i248;
+31'd996: Instruction = i249;
+31'd1000: Instruction = i250;
+31'd1004: Instruction = i251;
+31'd1008: Instruction = i252;
+31'd1012: Instruction = i253;
+31'd1016: Instruction = i254;
+31'd1020: Instruction = i255;
+
+
+                endcase
+        end
+endmodule
